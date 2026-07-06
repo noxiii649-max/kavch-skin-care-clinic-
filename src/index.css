@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", "Plus Jakarta Sans", sans-serif;
+  --font-display: "Cinzel", "Playfair Display", serif;
+  
+  /* Sleek Interface Color Palette overrides/additions */
+  --color-emerald-50: #f0fdf4;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b; /* Signature Emerald */
+  --color-emerald-950: #022c22;
+  
+  --color-gold-50: #fbfaf5;
+  --color-gold-100: #f8f4e1; /* Signature Light Gold */
+  --color-gold-200: #eadcae;
+  --color-gold-300: #dfc57e;
+  --color-gold-400: #d1ab4e;
+  --color-gold-500: #c5a059; /* Core luxury gold */
+  --color-gold-600: #a7781b;
+  --color-gold-700: #855f13;
+  
+  --color-charcoal-800: #1e293b; /* Slate color */
+  --color-charcoal-900: #0f172a; /* Slate 900 */
+}
+
+/* Custom global styles for smooth premium feel */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: var(--font-sans);
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a7781b;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #dfc57e 0%, #c5a059 50%, #855f13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient-bg {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+}
+
+.btn-premium {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(6, 78, 59, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+  background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+  box-shadow: 0 6px 16px rgba(6, 78, 59, 0.35);
+  transform: translateY(-1px);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(6, 78, 59, 0.08);
+}
+
+

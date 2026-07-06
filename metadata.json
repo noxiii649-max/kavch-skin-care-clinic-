@@ -1,0 +1,6 @@
+{
+  "name": "Kavach Skin Clinic",
+  "description": "Premium, modern, luxury dermatology and skin care clinic website for Dr. Kriteeka Saini (MBBS, MD Dermatology). Expert treatments for Acne, Hair Fall, Pigmentation, Melasma, and more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
